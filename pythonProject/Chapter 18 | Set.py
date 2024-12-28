@@ -22,4 +22,29 @@ my_lib_1 = {'print', 'hello', 'Python'}
 my_lib_2 = {'hello', 'Python', 'print'}
 # These sets are considered equal, even though the elements are in a different order.
 print(my_lib_1 == my_lib_2) # True
-#
+
+### Practice - practice ###
+posts_ids = {10, 25, 16, 73}
+# posts_ids[3] # Raises an error
+# If an object does not have the __getitem__ method, attempting to access
+# an index will cause an error.
+# For example:
+# posts_ids. - no __getitem__ method available
+
+# Sets do not support item deletion by index
+photo_dimensions = {'1920x1080', '800x600'}
+print(len(photo_dimensions))
+# del photo_dimensions[1] # TypeError: 'set' object does not support item deletion
+
+# It is possible to add a tuple to a set because tuples are immutable.
+# random_num = {[10, 5], 20, 30, 40, 50} # This will raise an error
+# print(random_num) # TypeError: unhashable type: 'list'
+random_num = {(10, 5), 20, 30, 40, 50} # This works
+print(random_num) # {(10, 5), 50, 20, 40, 30}
+
+# To create an empty set, we need to use the set() function:
+my_set = set()
+print(type(my_set)) # <class 'set'>
+# Otherwise, using {} will create a dictionary:
+my_set = {}
+print(type(my_set)) # <class 'dict'>
