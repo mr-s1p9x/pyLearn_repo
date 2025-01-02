@@ -58,3 +58,4 @@ my_list = []  # Creating an empty list
 for n in range(12, 98, 3):  # Iterating through the range
     my_list.append(n)  # Adding each value from the range to the list
 print(my_list)  # Prints the final list
+
