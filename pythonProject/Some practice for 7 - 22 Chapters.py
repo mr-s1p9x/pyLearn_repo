@@ -220,14 +220,59 @@
 # ##############################
 # Раздел 16: Словари
 # 1. Создай словарь, где ключами будут числа от 1 до 5, а значениями — их квадраты.
-powDict = {x: x ** 2 for x in range (1, 6)}
-print(powDict)
+# powDict = {x: x ** 2 for x in range (1, 6)}
+# print(powDict)
 
 # 2. Напиши программу, которая находит значение по заданному ключу.
-foundKey = 3
-value = powDict.get(foundKey) # returning value or None, if key absent
+# foundKey = 3
+# value = powDict.get(foundKey) # returning value or None, if key absent
 
-if value is not None:
-    print(f'Found: key={foundKey}, value={value}')
-else:
-    print(f'Key {foundKey} not found in the dictionary.')
+# if value is not None:
+#     print(f'Found: key={foundKey}, value={value}')
+# else:
+#     print(f'Key {foundKey} not found in the dictionary.')
+
+# ##############################
+# Раздел 17: Кортежи
+# 1. Напиши функцию, которая принимает кортеж чисел и возвращает сумму его элементов.
+# numTuple = (10, 20, 21, 5, 8, 38, 34, 22)
+
+# def sumNum(num_sequence):
+#     sum = 0
+#     for i in num_sequence:
+#         sum += i
+#     return sum
+
+# print(sumNum(numTuple))
+
+# 2. Создай кортеж из трёх элементов, распакуй его в три переменные.
+# consoles = ('playstataion', 'xbox', 'nintendo')
+# a, b, c = consoles # literally means unpacking
+# print(a)
+# print(b)
+# print(c)
+
+# ##############################
+# Раздел 18: Наборы
+# 1. Напиши программу, которая находит пересечение двух множеств.
+# file_formats = {'avi', 'mp4', 'mp3', 'flac', 'exe', 'txt', 'bin'}
+# other_formats = {'mp4', 'flac', 'ini', 'docx', 'png', 'iso', 'exe'}
+# common_formats = file_formats.intersection(other_formats)
+# print(common_formats)
+
+# 2. Создай множество, содержащее только уникальные элементы из списка.
+# formats_list = ('avi', 'mp4', 'avi', 'exe', 'docx', 'png', 'iso', 'exe', 'ini', 'flac', 'avi', 'ini')
+# formats_list_2 = ('mp4', 'flac', 'docx', 'png', 'iso', 'exe', 'flac', 'mp3', 'iso')
+# new_formats = formats_list + formats_list_2
+# only_unique_formats = set(new_formats)
+# print(only_unique_formats)
+
+# ##############################
+# Раздел 19: Диапазоны
+# 1. Напиши программу, которая выводит все чётные числа от 1 до 20 с использованием range().
+for i in range(1, 21):
+    print(i, end=" ")
+print()
+# 2. Создай список чисел от 10 до 1 в обратном порядке с помощью range().
+for i in range(10, 0, -1):
+    print(i, end=" ")
