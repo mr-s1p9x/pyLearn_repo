@@ -270,9 +270,30 @@
 # ##############################
 # Раздел 19: Диапазоны
 # 1. Напиши программу, которая выводит все чётные числа от 1 до 20 с использованием range().
-for i in range(1, 21):
-    print(i, end=" ")
-print()
+# for i in range(1, 21):
+#     print(i, end=" ")
+# print()
+
 # 2. Создай список чисел от 10 до 1 в обратном порядке с помощью range().
-for i in range(10, 0, -1):
-    print(i, end=" ")
+# 1st
+# for i in range(10, 0, -1): # start stop step
+#     print(i, end=" ")
+
+# # 2nd 
+# for i in reversed(range(1, 11)):
+#     print(i, end=" ")
+
+# ##############################
+# Раздел 20: Функция zip
+# 1. Напиши программу, которая объединяет два списка в словарь с помощью zip().
+consoles = ['playstation', 'xbox', 'nintendo']
+price = [500, 450, 350]
+zip_list = zip(consoles, price)
+price_list = dict(zip_list)
+print(price_list)
+
+# 2. Используй zip(), чтобы сложить элементы двух списков поэлементно.
+num1 = [1, 3, 5, 3, 5]
+num2 = [10, 2, 3, 4, 5]
+summed = [x + y for x, y in zip(num1, num2)]
+print(summed)
