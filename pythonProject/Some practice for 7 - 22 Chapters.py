@@ -286,14 +286,14 @@
 # ##############################
 # Раздел 20: Функция zip
 # 1. Напиши программу, которая объединяет два списка в словарь с помощью zip().
-consoles = ['playstation', 'xbox', 'nintendo']
-price = [500, 450, 350]
-zip_list = zip(consoles, price)
-price_list = dict(zip_list)
-print(price_list)
+# consoles = ['playstation', 'xbox', 'nintendo']
+# price = [500, 450, 350]
+# zip_list = zip(consoles, price)
+# price_list = dict(zip_list)
+# print(price_list)
 
 # 2. Используй zip(), чтобы сложить элементы двух списков поэлементно.
-num1 = [1, 3, 5, 3, 5]
-num2 = [10, 2, 3, 4, 5]
-summed = [x + y for x, y in zip(num1, num2)]
-print(summed)
+# num1 = [1, 3, 5, 3, 5]
+# num2 = [10, 2, 3, 4, 5]
+# summed = [x + y for x, y in zip(num1, num2)]
+# print(summed)
