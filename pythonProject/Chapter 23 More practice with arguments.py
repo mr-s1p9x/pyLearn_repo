@@ -43,5 +43,5 @@ car = update_car_info(brand = "Honda", price = 20000)
 print(car)
 
 # TypeError: update_car_info() takes 0 positional arguments but 2 were given
-car = update_car_info("Honda", 20000)
-print(car)
+# car = update_car_info("Honda", 20000)
+# print(car)
