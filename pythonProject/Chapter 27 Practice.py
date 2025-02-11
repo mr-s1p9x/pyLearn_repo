@@ -34,5 +34,37 @@ print('apple' in fruit_set_2) # True
 print(1000 in fruit_set_1)  # False
 #print([] in fruit_set_1) # TypeError: unhashable type: 'list'
 
+# False value examples
+# we can use built in fuction bool() to doublecheck
+print(bool(0))
+print(bool(0.0))
+print(bool(0j))
+print()
 
-    
+print(bool({}))
+print(bool([]))
+print(bool(()))
+print(bool(set()))
+print(bool(range(0)))
+print(bool(""))
+print()
+
+print(bool(False))
+print(bool(None))
+print()
+
+# we can also use double 'not'
+print(not not {})
+print()
+
+# some more practice
+print(not not {'a': 10})
+print(not not ['abc', 10, 20])
+print(not not 1)
+print(not not 1.2)
+print(not not 0j)
+print(not not 8j)
+print(not not {True, False, 10, 'abc'})
+print(not not range(0, 10))
+print(not not range(1, 11))
+print(not not "word")
