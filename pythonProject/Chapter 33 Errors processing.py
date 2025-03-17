@@ -1,6 +1,6 @@
 # 1. Handling ZeroDivisionError using try/except
 # This example demonstrates how to catch an exception caused by division by zero.
-
+#test
 try:
     print(10 / 0)  # This will raise a ZeroDivisionError
 except ZeroDivisionError:
