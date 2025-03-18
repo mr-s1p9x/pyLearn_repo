@@ -28,6 +28,24 @@ except TypeError as e:
     print(f"Error: {e}")
 
 
+# Teacher solution
+def image_info2(img):
+    if ('image_id' not in img) or ('image_title' not in img):
+        raise TypeError("Keys image_id and image_title must be present")
+    return f"Image '{img['image_title']}' has id {img['image_id']}"
+
+# all in one creation
+print(image_info2({'image_title': 'my_c4t', 'image_id': 123}))
+
+# print(image_info2({'image_title': 'my_c4t'})) # TypeError
+# print(image_info2({'image_id': 123})) # TypeError
+
+try:
+    print(image_info2({'image_title': 'my_c4t'})) # raise an error
+except TypeError as e:
+    print(e) # Keys image_id and image_title must be present
+
+
 
 
 
