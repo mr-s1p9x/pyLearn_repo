@@ -37,3 +37,19 @@ def user_info(name, comments_qty=0):
 
 # Using ** to unpack dictionary keys as function arguments
 print(user_info(**user_profile))  # Output: Artem has 23 comments
+
+print("\n")
+# Unpacking a dictionary using *
+user_data = ['Artem', 24]
+
+def user_info_2(name, comments_qty): # in this case must to be exactly 2 elements 
+    if not comments_qty:
+        return f"{name} has no comments"
+    return f"{name} has {comments_qty} comments"
+
+print(user_info_2(*user_data))
+# we can also write as: ...(user_data[0], user_data[1])
+
+# also we can write like this:
+my_name, my_comments_qty = user_data
+print(user_info_2(my_name, my_comments_qty))
