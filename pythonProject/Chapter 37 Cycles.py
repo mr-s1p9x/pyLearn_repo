@@ -22,3 +22,31 @@ my_dict = {
 for key in my_dict:
     print(type(key))
     print(key, my_dict[key])
+
+print()
+# using .items() example
+for item in my_dict.items():
+    key, value = item
+    print(key, value)
+
+print()
+# we can also use this method: [tuple unpacking]
+for key, value in my_dict.items():
+    print(key, value)
+
+print()
+# FOR IN for SET
+video_ids =  {1435, 4317, 2739, 5403}
+
+for id in video_ids:
+    print(id)
+
+
+# Some practice
+for num in range(1, 31):
+    print(num, end=' ')
+
+print()
+
+for step in range(1, 100, 5):
+    print(step, end=' ')
