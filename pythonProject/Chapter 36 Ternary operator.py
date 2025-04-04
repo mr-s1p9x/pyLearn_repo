@@ -18,3 +18,4 @@ else:
 my_word = '231234230423723442389fsdfisdbnfidfsfiusfg32434fgervertbtrb5499hdegg9jg945g045g45'
 
 print('string is long') if len(my_word) > 79 else print('string is short')
+
